@@ -1,0 +1,174 @@
+class Handcricket:
+    def __init__(self):
+        self.player2 = None
+        self.player1 = None
+
+    def toss(self):
+        print("MAke Your Choice 1.ODD OR 2.EVEN! \n")
+        self.x = int(input("Enter Your Choice: "))
+
+
+    def start(self):
+        self.player1 = int(input("Enter Your Score: "))
+        self.player2 = int(input("Enter Your Score: "))
+        if (self.player2 + self.player1) % 2 == 0 and self.x == 2:
+            print("Player 1 Wins!!!")
+            print("Take 1.Bat Or 2.Ball ")
+            self.bat_or_ball = int(input("Enter Your input: "))
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 2:
+            print("Player 2 Wins!!!")
+            print("Take 1.Bat Or 2.Ball ")
+            self.bat_or_ball = int(input("Enter Your input: "))
+
+        elif (self.player2 + self.player1) % 2 == 0 and self.x == 1:
+            print("Player 2 Wins!!!")
+            print("Take 1.Bat Or 2.Ball ")
+            self.bat_or_ball = int(input("Enter Your input: "))
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 1:
+            print("Player 1 Wins!!!")
+            print("Take 1.Bat Or 2.Ball ")
+            self.bat_or_ball = int(input("Enter Your input: "))
+
+        if self.bat_or_ball == 1:
+            print("U Took Bat!!")
+        elif self.bat_or_ball == 2:
+            print("U took ball!!")
+        else:
+            print("Invalid")
+    def startplaying(self):
+        if (self.player2 + self.player1) % 2 == 0 and self.x == 2 and self.bat_or_ball == 1:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                if self.A == self.B:
+                    print("Out!!!")
+                    break
+                self.sum = self.A + self.sum
+
+                print("score of the Player: ",self.sum)
+
+
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 2 and self.bat_or_ball == 1:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.A + self.sum
+                if self.A==self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: ",self.sum)
+
+        elif (self.player2 + self.player1) % 2 == 0 and self.x == 1 and self.bat_or_ball == 1:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.A + self.sum
+                if self.A ==self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: ",self.sum)
+
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 1 and self.bat_or_ball == 1:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.A + self.sum
+                if self.A == self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: ",self.sum)
+
+    def balling(self):
+        if (self.player2 + self.player1) % 2 == 0 and self.x == 2 and self.bat_or_ball == 2:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.B + self.sum
+                if self.A == self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: " , self.sum)
+
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 2 and self.bat_or_ball == 2:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.B + self.sum
+                if self.A==self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: ",self.sum)
+
+        elif (self.player2 + self.player1) % 2 == 0 and self.x == 1 and self.bat_or_ball == 2:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.B + self.sum
+                if self.A ==self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: " ,self.sum)
+
+
+        elif (self.player2 + self.player1) % 2 != 0 and self.x == 1 and self.bat_or_ball == 2:
+            self.sum = 0
+            while self.player1 != self.player2 or self.player1 == self.player2:
+                self.A = int(input("Enter Your Score: "))
+                self.B = int(input("Enter Your Score: "))
+                self.sum = self.B + self.sum
+                if self.A == self.B:
+                    print("Out!!!")
+                    break
+                print("score of the Player: " ,self.sum)
+
+    def second(self):
+        self.sum1 = 0
+        if self.bat_or_ball==1:
+            while self.A == self.B:
+                self.C = int(input("Enter Your Score: "))
+                self.D = int(input("Enter Your Score: "))
+                self.sum1 = self.D + self.sum1
+                if self.C == self.D:
+                    break
+                print("Score of the Player: ",self.sum1)
+
+        elif self.bat_or_ball == 2:
+            self.sum1 = 0
+            while self.A == self.B:
+                self.C = int(input("Enter Your Score: "))
+                self.D = int(input("Enter Your Score: "))
+                self.sum1 = self.C + self.sum1
+                if self.C ==self.D:
+                    break
+                print("Score of the Player: ",self.sum1)
+
+    def display(self):
+        if self.sum > self.sum1 and self.bat_or_ball == 1:
+            print("Player 1 Wins!!!")
+        elif self.sum > self.sum1 and self.bat_or_ball == 2:
+            print("Player 2 Wins!!!")
+        elif self.sum < self.sum1 and self.bat_or_ball == 1:
+            print("Player 2 Wins!!!")
+        elif self.sum < self.sum1 and self.bat_or_ball == 2:
+            print("Player 1 Wins!!")
+
+
+game = Handcricket()
+game.toss()
+game.start()
+game.startplaying()
+game.balling()
+game.second()
+game.display()
